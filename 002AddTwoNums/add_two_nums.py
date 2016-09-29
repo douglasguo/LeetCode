@@ -4,7 +4,15 @@ class ListNode(object):
         self.val = x
         self.next = None
 
-class Solution():
+class Solution(object):
+	def length(self,x):
+		x = x.next
+		count = 1
+		while x:
+			x = x.next
+			count = count +1
+		return count
+
 	def add_two_nums(self,lst1,lst2):
 		if not lst1:
 			return lst2
