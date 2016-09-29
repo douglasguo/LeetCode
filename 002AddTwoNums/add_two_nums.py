@@ -1,3 +1,9 @@
+
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
 class Solution():
 	def add_two_nums(self,lst1,lst2):
 		if not lst1:
